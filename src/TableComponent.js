@@ -71,7 +71,7 @@ const TableComponent = () => {
   }, []);
 
   return (
-    <div className="ag-theme-material" style={{ height: '800px', width: '100%', margin: 'auto' }}>
+    <div className="ag-theme-material" style={{ height: 800, marginTop: 10, marginRight: 40, marginBottom: 80, marginLeft: 40 }}>
       <AgGridReact
         ref={gridRef}
         columnDefs={columnDefs}
