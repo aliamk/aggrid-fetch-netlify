@@ -69,6 +69,14 @@
     "@ag-grid-enterprise/column-tool-panel" "31.3.2"
     "@ag-grid-enterprise/core" "31.3.2"
 
+"@ag-grid-enterprise/multi-filter@^31.3.2":
+  version "31.3.2"
+  resolved "https://registry.npmjs.org/@ag-grid-enterprise/multi-filter/-/multi-filter-31.3.2.tgz"
+  integrity sha512-Z1Uh4R55fRFRcXEmgc/+t5O5LYpkHjucAU1xtlsDiuuxwPx8ppWE7sGZCI5/ovKDKC1kGjpg1Dz3iv47jGBV4g==
+  dependencies:
+    "@ag-grid-community/core" "31.3.2"
+    "@ag-grid-enterprise/core" "31.3.2"
+
 "@ag-grid-enterprise/range-selection@31.3.2":
   version "31.3.2"
   resolved "https://registry.npmjs.org/@ag-grid-enterprise/range-selection/-/range-selection-31.3.2.tgz"
@@ -92,6 +100,15 @@
   dependencies:
     "@ag-grid-community/core" "31.3.2"
     "@ag-grid-enterprise/core" "31.3.2"
+
+"@ag-grid-enterprise/sparklines@^31.3.2":
+  version "31.3.2"
+  resolved "https://registry.npmjs.org/@ag-grid-enterprise/sparklines/-/sparklines-31.3.2.tgz"
+  integrity sha512-l+mJ6u6+d8huhHrSWo5OmiSYkAc3RxekJadHyxL152vwJW4DIzjp5TviHWS92qX6U2oNb5yNyWMzvUoxJrPk/Q==
+  dependencies:
+    "@ag-grid-community/core" "31.3.2"
+    "@ag-grid-enterprise/core" "31.3.2"
+    ag-charts-community "9.3.1"
 
 "@alloc/quick-lru@^5.2.0":
   version "5.2.0"
