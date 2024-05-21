@@ -20,7 +20,6 @@ const headers = [
   "Target Size Achievement Group",
   "Time To First Close",	
   "Fund Style",	
-  "ESG",	
   "Main Target Sector",	
   "Fund Structure",	
   "Open/Closed",
@@ -78,6 +77,8 @@ const headers = [
 
 
 /* 
+  "ESG",	
+
 Capital Call Facility
 Target Size Achievement
 Target Size Achievement Group
