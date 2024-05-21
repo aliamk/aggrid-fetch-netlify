@@ -71,7 +71,7 @@ const TableComponent = () => {
   }, []);
 
   return (
-    <div className="ag-theme-balham" style={{ height: '800px', width: '100%', margin: 'auto' }}>
+    <div className="ag-theme-material" style={{ height: '800px', width: '100%', margin: 'auto' }}>
       <AgGridReact
         ref={gridRef}
         columnDefs={columnDefs}
