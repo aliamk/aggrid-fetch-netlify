@@ -34,9 +34,6 @@ const TableComponent5 = () => {
     const [loading, setLoading] = useState(false);
     const tokenRef = useRef(null); 
 
-    const containerStyle = useMemo(() => ({ width: "100%", height: "100%" }), []);
-    const gridStyle = useMemo(() => ({ height: 500, marginLeft: 20, marginRight: 20 }), []);
-
        /* Column Definitions: Defines the columns to be displayed. */
       const columnDefs = useMemo(() => [
         { headerName: 'Name', field: 'name' },
@@ -64,7 +61,32 @@ const TableComponent5 = () => {
         { headerName: 'Legal Advisers', field: 'legalAdvisers', chartDataType: 'series' },
         { headerName: 'Auditors', field: 'auditors', chartDataType: 'series' },
         { headerName: 'Administrators', field: 'administrators', chartDataType: 'series' },
-
+        { headerName: 'Currency', field: 'currency', chartDataType: 'series' },
+        { headerName: 'Initial Target Size (m) USD', field: 'initialTargetSizeUSD', chartDataType: 'series' },
+        { headerName: 'Target IRR (Net) - Minimum (%)', field: 'targetNetIRRMinimum', chartDataType: 'series' },
+        { headerName: 'Target IRR (Net) - Maximum (%)', field: 'targetNetIRRMaximum', chartDataType: 'series' },
+        { headerName: 'Target IRR (Gross) - Minimum (%)', field: 'targetNetIRRGrossMinimum', chartDataType: 'series' },
+        { headerName: 'Target IRR (Gross) - Maximum (%)', field: 'targetNetIRRGrossMaximum', chartDataType: 'series' },
+        { headerName: 'Permitted Leverage (% of GAV)', field: 'permittedLeverage', chartDataType: 'series' },
+        { headerName: 'Target Leverage - Minimum', field: 'targetLeverageMinimum', chartDataType: 'series' },
+        { headerName: 'Target Leverage - Maximum', field: 'targetLeverageMaximum', chartDataType: 'series' },
+        { headerName: 'Percentage Raised at First Close', field: 'percentageRaisedFirstClose', chartDataType: 'series' },
+        { headerName: 'Known Assets', field: 'knownAssets', chartDataType: 'series' },
+        { headerName: 'Time in Market (Months)', field: 'timeInMarket', chartDataType: 'series' },
+        { headerName: 'Main Target Sectors', field: 'targetSectorsMain', chartDataType: 'series' },
+        { headerName: 'Target Sectors', field: 'targetSectors', chartDataType: 'series' },
+        { headerName: 'Main Target Geography', field: 'targetRegionsMain', chartDataType: 'series' },
+        { headerName: 'Target Geographies', field: 'targetRegionsFocus', chartDataType: 'series' },
+        { headerName: 'Separate Account', field: 'administrators', chartDataType: 'series' },
+        { headerName: 'Extension Provisions', field: 'extensionProvisions', chartDataType: 'series' },
+        { headerName: 'Extension Provision Length"', field: 'extensionProvisionLength', chartDataType: 'series' },
+        { headerName: 'Co-Investing LPs', field: 'coinvestingLps', chartDataType: 'series' },
+        { headerName: 'Co-Investing GPs', field: 'coinvestingGps', chartDataType: 'series' },
+        { headerName: 'Fund Series', field: 'fundSeries', chartDataType: 'series' },
+        { headerName: 'Fund Sequence (Overall)', field: 'fundSequence', chartDataType: 'series' },
+        { headerName: 'Distribution Policy', field: 'distributionPolicy', chartDataType: 'series' },
+        { headerName: 'Domicile', field: 'domicile', chartDataType: 'series' },
+        { headerName: 'Placement Agents', field: 'placementAgents', chartDataType: 'series' }
   ], []);
 
   const defaultColDef = {
@@ -120,7 +142,7 @@ const TableComponent5 = () => {
       
   return (
       <div>
-        <div className="ag-theme-quartz-dark" style={{ height: 800, marginTop: 10, marginRight: 40, marginBottom: 80, marginLeft: 40 }}>
+        <div className="ag-theme-quartz-dark" style={{ height: 800, marginTop: 10, marginRight: 40, marginBottom: 80, marginLeft: 40, textAlign: 'left' }}>
         <AgGridReact 
             ref={gridRef} 
             rowGroupPanelShow={"always"} 
