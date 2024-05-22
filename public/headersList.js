@@ -30,6 +30,7 @@ const headers = [
   "Legal Advisers",	
   "Auditors",	
   "Administrators",	
+  
   "Currency",
   "Initial Target Size (m)",	
   "Initial Target Size (m) USD", 
